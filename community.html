@@ -1,0 +1,283 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Stitch Design</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#111618] text-white"
+    style="font-family: 'Space Grotesk', 'Noto Sans', sans-serif"
+  >
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden"
+    >
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283339] px-10 py-4"
+      >
+        <div class="flex items-center gap-4">
+          <div class="text-[var(--primary-color)]">
+            <svg
+              class="h-8 w-8"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.59L7.41 14H10v-4H7L12 5l5 5h-3v4h2.59L13 17.59z"
+              ></path>
+            </svg>
+          </div>
+          <h2
+            class="text-white text-xl font-bold leading-tight tracking-[-0.015em]"
+          >
+            AquaSave
+          </h2>
+        </div>
+        <nav class="flex items-center gap-8 text-sm font-medium text-[#9db0b9]">
+          <a class="hover:text-white transition-colors" href="Home.html"
+            >Home</a
+          >
+          <a class="hover:text-white transition-colors" href="calculator.html"
+            >Calculator</a
+          >
+          <a class="hover:text-white transition-colors" href="Ar.html"
+            >AR Visualizer</a
+          >
+          <a class="hover:text-white transition-colors" href="nearbyAq.html"
+            >Aquifers</a
+          >
+          <a class="text-white font-semibold" href="#">Community</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#283339] text-white hover:bg-[#3b4b54] transition-colors"
+          >
+            <span class="material-symbols-outlined"> notifications </span>
+          </button>
+          <div
+            class="h-10 w-10 rounded-full bg-cover bg-center"
+            style="
+              background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCykmvwWU704Jf_UWbuPpEUmOkWzycbYrftqFkRoKPE2njzFtAHzN5e_eTM29hvaY4Vvg5fx3UYpvjT_lq6sL-gVpIJ6MBwjtwN2MWp2VE9KO7Bxz7hZ7FzqroZCTfRKdTBgg8HQfHbUVp8yVWhPVpy1CUzgEWWe3Fv_C6zjUndQVKsk3hTnR1yTvqAKvkJTG29h9JmrysH2qhZETSQfmqKYDUDJUEaMS9sHPPG1tohWbIVp8fpx22TODBAUGqRTJ6O0gKsWCVnZg');
+            "
+          ></div>
+        </div>
+      </header>
+      <main class="flex flex-1 justify-center py-10 px-4 sm:px-10">
+        <div class="w-full max-w-4xl">
+          <div class="mb-8 text-center">
+            <h1 class="text-4xl font-bold text-white tracking-tight">
+              Community Forum
+            </h1>
+            <p class="mt-2 text-lg text-[#9db0b9]">
+              Connect with other AquaSave users to share experiences, ask
+              questions, and discuss rooftop rainwater harvesting.
+            </p>
+          </div>
+          <div class="mb-8">
+            <div
+              class="flex items-start gap-4 p-4 bg-[#1c2327] rounded-lg border border-[#283339]"
+            >
+              <div
+                class="h-12 w-12 rounded-full bg-cover bg-center shrink-0"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAtnOdDA3BTsmtVcRivrd9r2CdEvFiFkmpjkVPd4IjwR-OygLsqP71Oxstx___XBz1CpEZFGsyl9g09sq1MYYeZBDBwGD1JtH_wzXTPWlgNFkeyAetYTAru07bP1dMDJBapLn5tcPJn4Csij3kTxEV9PQaFrR9sL5voBhypncLSwcsHw1XC3y3RfECzwN_NCkcRYCfeLNabzpfft1n1yBC4QxiKGWAyZx_73gyWGHUvgqNPOUNZ8lLsZIopGzFB2YfYxWXYpmLrWQ');
+                "
+              ></div>
+              <div class="flex-1">
+                <textarea
+                  class="form-input block w-full resize-none rounded-md border-0 bg-transparent p-0 text-white placeholder:text-[#556c77] focus:ring-0 sm:text-sm sm:leading-6"
+                  placeholder="Start a new discussion..."
+                ></textarea>
+                <div class="mt-3 flex items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <button
+                      class="flex h-8 w-8 items-center justify-center rounded-full text-[#9db0b9] hover:bg-[#283339] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >image</span
+                      >
+                    </button>
+                    <button
+                      class="flex h-8 w-8 items-center justify-center rounded-full text-[#9db0b9] hover:bg-[#283339] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >link</span
+                      >
+                    </button>
+                  </div>
+                  <button
+                    class="min-w-[84px] cursor-pointer rounded-full bg-[var(--primary-color)] px-4 py-2 text-sm font-semibold text-white hover:bg-opacity-90 transition-colors"
+                  >
+                    Post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-xl font-bold text-white tracking-tight px-1">
+              Recent Posts
+            </h3>
+            <div class="rounded-lg border border-[#283339] bg-[#1c2327] p-5">
+              <div class="flex items-start gap-4">
+                <div
+                  class="h-10 w-10 shrink-0 rounded-full bg-cover bg-center"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYh0lHb65mLtFhT0UExwbr0r2I7Knjmr72c85QS78qtQNLss7ajdeNRPRLt_qmCiBd_eZmgJSv-0_4XmNxdbRm68b-UlipuJEyYnMwC_6l0ohvNKYHbr-9nmhoUaLQ_gsoytp5R_BF7jSBtlRQhm_ckMx24c4k2NFsM8byNLmsZmcy8hl4JkNIl_8jpBt08bkrlq8ZdmCb4OdtZDknFqIk1uFR2sWigCnTHifylifj_5e1u85ifXjpDAELRSs7qLFzpLfAs22PtQ');
+                  "
+                ></div>
+                <div class="flex-1">
+                  <div class="flex items-baseline gap-2">
+                    <p class="text-sm font-bold text-white">Sophia Clark</p>
+                    <p class="text-xs text-[#9db0b9]">2 days ago</p>
+                  </div>
+                  <p class="mt-2 text-sm text-white">
+                    Just installed my system last week! Already seeing a
+                    noticeable difference in my water bill. Any tips for
+                    maintaining the filters?
+                  </p>
+                  <div class="mt-3 flex items-center gap-6">
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_up</span
+                      >
+                      <span class="text-sm font-medium">12</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_down</span
+                      >
+                      <span class="text-sm font-medium">2</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >chat_bubble_outline</span
+                      >
+                      <span class="text-sm font-medium">Reply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border border-[#283339] bg-[#1c2327] p-5">
+              <div class="flex items-start gap-4">
+                <div
+                  class="h-10 w-10 shrink-0 rounded-full bg-cover bg-center"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGUY4W4A1M8M2gxr22MghjOaf-_X7s9MREf_e0ZKnYyJRLnGKrescgGatioBrD6y_b7pFrPyL8GbCua2FThzuVNrRWqhUWCDVL2pIwh3CcYpuu0iPHDq6_fPw1h0m1TIuWbrGpieWPligL72bFe4p1IzGKBsLXWVp-Tczpv5mRHRa_6bX5OFBpyHc9pFk3fEHvSPiK4ZDVFfU5GICnUYZll9OpIFAwf5fv7mDHh5EHykDYKwh3-xJwR4HMiR3k094LElYF9po2JA');
+                  "
+                ></div>
+                <div class="flex-1">
+                  <div class="flex items-baseline gap-2">
+                    <p class="text-sm font-bold text-white">Ethan Bennett</p>
+                    <p class="text-xs text-[#9db0b9]">3 days ago</p>
+                  </div>
+                  <p class="mt-2 text-sm text-white">
+                    Has anyone tried using the harvested water for gardening?
+                    I'm curious about the nutrient content compared to tap
+                    water.
+                  </p>
+                  <div class="mt-3 flex items-center gap-6">
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_up</span
+                      >
+                      <span class="text-sm font-medium">8</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_down</span
+                      >
+                      <span class="text-sm font-medium">1</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >chat_bubble_outline</span
+                      >
+                      <span class="text-sm font-medium">Reply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg border border-[#283339] bg-[#1c2327] p-5">
+              <div class="flex items-start gap-4">
+                <div
+                  class="h-10 w-10 shrink-0 rounded-full bg-cover bg-center"
+                  style="
+                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAcW18ZxyCv8L891MjF3fFW_tqWrDGde5SsFm8EQQ6gduVzko6bXUcveYiJsb3XbDsaRPR2ynrpg2v5tJajM5WQ9Vm29i6eeM-UwXY4d4DSEmlwW6QTPRCT6QgsQ4IVXC893X7sBHTYLXdxZ74S7IC8goX71nvNqwBBQKhVHfifVu_CINYLPfVsziLzHAj2tmLJ6o3Ct1LiwvAgirzc_D-E2bN-GGUJQDO6jCK6gWVJDuW7Ml9LQt3ba67QsHQT3_a9PkA0J0cuw');
+                  "
+                ></div>
+                <div class="flex-1">
+                  <div class="flex items-baseline gap-2">
+                    <p class="text-sm font-bold text-white">Olivia Carter</p>
+                    <p class="text-xs text-[#9db0b9]">4 days ago</p>
+                  </div>
+                  <p class="mt-2 text-sm text-white">
+                    I'm looking for recommendations on the best type of storage
+                    tank for a small urban rooftop. Any suggestions?
+                  </p>
+                  <div class="mt-3 flex items-center gap-6">
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_up</span
+                      >
+                      <span class="text-sm font-medium">15</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >thumb_down</span
+                      >
+                      <span class="text-sm font-medium">3</span>
+                    </button>
+                    <button
+                      class="flex items-center gap-2 text-[#9db0b9] hover:text-white transition-colors"
+                    >
+                      <span class="material-symbols-outlined text-xl"
+                        >chat_bubble_outline</span
+                      >
+                      <span class="text-sm font-medium">Reply</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
