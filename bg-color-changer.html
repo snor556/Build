@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg-color-changer</title>
+</head>
+<body>
+
+    <!-- <script>
+        let randomColorGen = ()=>{
+            let letters = "0123456789ABCDEF"
+            let colors = '#';
+            for (let i = 0; i < 6 ; i++) {
+                colors += letters[Math.floor(Math.random()*16)]
+                
+            }
+            
+            console.log(colors);
+            return colors;
+        }
+    
+        setInterval(() => {
+            document.body.style.backgroundColor = randomColorGen();
+        },3000);
+
+        
+    </script> -->
+
+    <script>
+       
+        let randomColorGen = ()=>{
+             let letters = '0123456789ABCDEF';
+             color = '#'
+            for(let i=0;i<6;i++){
+                color += letters[Math.floor(Math.random()*16)]
+            }
+            return color
+        }
+        setInterval(() => {document.body.style.backgroundColor = randomColorGen();},2000);
+        
+    </script>
+</body>
+</html>

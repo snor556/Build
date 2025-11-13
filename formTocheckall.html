@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation Example</title>
+</head>
+<body>
+  <h2>Online Form Validation</h2>
+
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    // Step 1: Select the form and message area
+    const form = document.getElementById("myForm");
+    const message = document.getElementById("message");
+
+    // Step 2: Add event listener for submit
+    form.addEventListener("submit", function(event) {
+      // Prevent the page from refreshing
+      event.preventDefault();
+
+      // Step 3: Get values entered by user
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const age = document.getElementById("age").value.trim();
+
+      // Step 4: Validate all fields are filled
+      if (!name || !email || !age) {
+        message.textContent = "❌ All fields are required!";
+        message.style.color = "red";
+        return;
+      }
+
+      // Step 5: Validate email format
+      if (!email.includes("@") || !email.includes(".")) {
+        message.textContent = "❌ Invalid email! Must contain '@' and '.'";
+        message.style.color = "red";
+        return;
+      }
+
+      // Step 6: Validate age range
+      const ageNum = Number(age);
+      if (ageNum < 18 || ageNum > 60) {
+        message.textContent = "❌ Age must be between 18 and 60.";
+        message.style.color = "red";
+        return;
+      }
+
+      // Step 7: If all checks pass
+      message.textContent = "✅ Form submitted successfully!";
+      message.style.color = "green";
+    });
+  </script>
+</body>
+</html>
